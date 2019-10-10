@@ -34,7 +34,21 @@ myGreeting.sayHi("Jesus");
 // Principle 3
 
 // code example for New Binding
+function winner(person) {
+    this.prizeWon = ' Won 1 Million Dollars';
+    this.person = person;
+    this.speak = function() {
+        console.log(this.person + this.prizeWon);
+        console.log(this);
+    };
+}
+const jesus = new winner('Jesus');
+const david = new winner('David');
 
+jesus.speak();
+david.speak();
 // Principle 4
 
 // code example for Explicit Binding
+jesus.speak.call(jesus);
+david.speak.apply(david);
