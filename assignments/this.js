@@ -1,4 +1,4 @@
-/* The for principles of "this";
+  /* The for principles of "this";
 * in your own words. explain the four principle for the "this" keyword below.
 *
 * 1. Globa/Window binding object: When in the global scope, the value of “this” will be the window/console Object
@@ -12,10 +12,7 @@
 // Principle 1
 
 // code example for Window Binding
-function sayCity(city) {
-    return city;
-}
-sayCity("Miami-Beach");
+ console.log(this);
 
 
 
